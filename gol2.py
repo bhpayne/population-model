@@ -17,7 +17,7 @@ class person:
     print("population=%d" % person.person_count)
     
   def displayPerson(self):
-    print "Name=",self.name,", age in days=",self.age,", sex=",self.sex,", kid count=",self.number_of_children
+    print("Name=",self.name,", age in days=",self.age,", sex=",self.sex,", kid count=",self.number_of_children)
 
 initial_number_of_people=100
 birth_rate=0.0001
@@ -27,13 +27,13 @@ death_rate=0.0001
 
 population=[]
 for indx in range(initial_number_of_people):
-  this_person=person("Ben",random.randint(1,36500),"male",random.randint(0,4))
+  this_person=person("mynamehere",random.randint(1,36500),"male",random.randint(0,4))
   population.append(this_person)
 
 population[0].displayPerson()
 population[0].displayCount()
-print len(population)
-print "my age=",population[0].age
+print("population=",len(population))
+print("my age=",population[0].age)
 
 for day in range(3650):
   if ((day % 365)==0):
@@ -72,4 +72,6 @@ for day in range(3650):
     population.append(this_person)    
   
 population[0].displayPerson()
-print population[0].age
+print("age=",population[0].age)
+
+#EOF
